@@ -6,7 +6,7 @@ Proceso Cajero
 	Escribir "--- Juliana = 1012---";
 	Escribir "--- Diego = 1013---";
 	Escribir " ";
-	Escribir "-----CONTRASE—AS-----";
+	Escribir "-----CONTRASE√ëAS-----";
 	Escribir "--- Marcos = Marc2---";
 	Escribir "--- Juliana = Julii---";
 	Escribir "--- Diego = dieg0 ---";
@@ -37,17 +37,17 @@ Proceso Cajero
 	
 	Si id = id1 Entonces //--------USUARIO MARCOS---------
 		Escribir " ";
-		Escribir "Buen dÌa, Marcos Ortis, digite su contraseÒa, por favor";
+		Escribir "Buen d√≠a, Marcos Ortis, digite su contrase√±a, por favor";
 		Leer pass;
 		
-		Mientras pass <> pass1 Hacer  //ContraseÒa incorrecta
-			Escribir "ContraseÒa incorrecta, digitela nuevamente";
+		Mientras pass <> pass1 Hacer  //Contrase√±a incorrecta
+			Escribir "Contrase√±a incorrecta, digitela nuevamente";
 			Leer pass;
 		FinMientras
 		again = "s";
 		Mientras again = "S" o again = "s" Hacer // OTRA OPERACION CON LA CUENTA
-			Escribir " ";   //ContraseÒa correcta
-			Escribir "Bienvenido de nuevo Marcos, quÈ operaciÛn desea realizar con su cuenta?";
+			Escribir " ";   //Contrase√±a correcta
+			Escribir "Bienvenido de nuevo Marcos, qu√© operaci√≥n desea realizar con su cuenta?";
 			Escribir "Recuerde que cuenta con: $", cuenta1, " en su cuenta bancaria";
 			Escribir " ";
 			Escribir "R-etirar dinero; T-ransferir dinero";
@@ -58,29 +58,29 @@ Proceso Cajero
 				Leer retiro;
 				
 				Mientras retiro > cuenta1 Hacer //Demasiado dinero
-					Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+					Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 					Leer retiro;
 				FinMientras
 				
 				Escribir " ";
 				Escribir "Va a retirar: $", retiro;
-				Escribir "QuedarÌa con un total de: $", (cuenta1-retiro), " en su cuenta bancaria";
+				Escribir "Quedar√≠a con un total de: $", (cuenta1-retiro), " en su cuenta bancaria";
 				Escribir " ";
-				Escribir "Desea continuar? S/N";  //CONFIRMACI”N DE CONTINUAR
+				Escribir "Desea continuar? S/N";  //CONFIRMACI√ìN DE CONTINUAR
 				Leer confir;
 				Si confir = "s" o confir = "S" Entonces  //Continuar con el retiro
 					cuenta1 = cuenta1-retiro;
 					Escribir " ";
-					Escribir "La operaciÛn se realizÛ satisfactoriamente";
+					Escribir "La operaci√≥n se realiz√≥ satisfactoriamente";
 					Escribir "Ha retirado: $",retiro, " de su cuenta bancaria";
 					Escribir " ";
 					Escribir "Ahora en su cuenta tiene un total de: $", cuenta1;
 					Escribir " ";
-					Escribir "Desea realizar otra operaciÛn con su cuenta?"; // VOLVER A HACER OTRA OPERACION
+					Escribir "Desea realizar otra operaci√≥n con su cuenta?"; // VOLVER A HACER OTRA OPERACION
 					Escribir "(S/N)";
 					Leer again;
 				SiNo
-					Escribir "Le regresaremos a la p·gina inicial, Marcos";
+					Escribir "Le regresaremos a la p√°gina inicial, Marcos";
 					again = "s";
 				FinSi
 			SiNo
@@ -98,12 +98,12 @@ Proceso Cajero
 							leer trans;
 							
 							Mientras trans> cuenta1 Hacer //Demasiado dinero
-								Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+								Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 								Leer trans;
 							FinMientras
 							
 							Escribir " ";
-							Escribir "Est· a punto de realizar una transferencia a Diego Castillo de: $", trans;
+							Escribir "Est√° a punto de realizar una transferencia a Diego Castillo de: $", trans;
 							Escribir "En su cuenta quedaria con: $", (cuenta1 - trans), " despues de realizar la transferencia";
 							Escribir "Desea continuar o cambiar el valor?";
 							Escribir "(Cualquier letra)/N";
@@ -116,7 +116,7 @@ Proceso Cajero
 						cuenta3 = cuenta3 + trans; // SUMAR TRANSFERENCIA A LA OTRA CUENTA
 						Escribir "Su cuenta ha quedado con un total de: $", cuenta1;
 						Escribir " ";
-						Escribir "Desea realizar otra operaciÛn con su cuenta?";
+						Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 						Escribir "(S/N)";
 						Leer again;
 					SiNo
@@ -129,12 +129,12 @@ Proceso Cajero
 								leer trans;
 								
 								Mientras trans> cuenta1 Hacer //Demasiado dinero
-									Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+									Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 									Leer trans;
 								FinMientras
 								
 								Escribir " ";
-								Escribir "Est· a punto de realizar una transferencia a Juliana Alvarez de: $", trans;
+								Escribir "Est√° a punto de realizar una transferencia a Juliana Alvarez de: $", trans;
 								Escribir "En su cuenta quedaria con: $", (cuenta1 - trans), " despues de realizar la transferencia";
 								Escribir "Desea continuar o cambiar el valor?";
 								Escribir "(Cualquier letra)/N";
@@ -147,33 +147,33 @@ Proceso Cajero
 							cuenta2 = cuenta2+trans;
 							Escribir "Su cuenta ha quedado con un total de: $", cuenta1;
 							Escribir " ";
-							Escribir "Desea realizar otra operaciÛn con su cuenta?";
+							Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 							Escribir "(S/N)";
 							Leer again;
 						SiNo
-							Escribir "Por favor escoja un valor v·lido (D, J)";
+							Escribir "Por favor escoja un valor v√°lido (D, J)";
 						FinSi
 					FinSi
 					
 				SiNo
-					Escribir "Por favor, ingrese una operaciÛn v·lida";
+					Escribir "Por favor, ingrese una operaci√≥n v√°lida";
 			FinSi
 		FinSi
 		FinMientras
 	SiNo
 		Si id = id2 Entonces//----------USUARIO JULIANA-----------
 			Escribir " ";
-			Escribir "Buen dÌa, Juliana Alvarez, digite su contraseÒa, por favor";
+			Escribir "Buen d√≠a, Juliana Alvarez, digite su contrase√±a, por favor";
 			Leer pass;
 			
-			Mientras pass <> pass2 Hacer  //ContraseÒa incorrecta
-				Escribir "ContraseÒa incorrecta, digitela nuevamente";
+			Mientras pass <> pass2 Hacer  //Contrase√±a incorrecta
+				Escribir "Contrase√±a incorrecta, digitela nuevamente";
 				Leer pass;
 			FinMientras
 			again = "s";
 			Mientras again = "S" o again = "s" Hacer // OTRA OPERACION CON LA CUENTA
-				Escribir " ";   //ContraseÒa correcta
-				Escribir "Bienvenida de nuevo Juliana, quÈ operaciÛn desea realizar con su cuenta?";
+				Escribir " ";   //Contrase√±a correcta
+				Escribir "Bienvenida de nuevo Juliana, qu√© operaci√≥n desea realizar con su cuenta?";
 				Escribir "Recuerde que cuenta con: $", cuenta2, " en su cuenta bancaria";
 				Escribir " ";
 				Escribir "R-etirar dinero; T-ransferir dinero";
@@ -184,29 +184,29 @@ Proceso Cajero
 					Leer retiro;
 					
 					Mientras retiro > cuenta2 Hacer //Demasiado dinero
-						Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+						Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 						Leer retiro;
 					FinMientras
 					
 					Escribir " ";
 					Escribir "Va a retirar: $", retiro;
-					Escribir "QuedarÌa con un total de: $", (cuenta2-retiro), " en su cuenta bancaria";
+					Escribir "Quedar√≠a con un total de: $", (cuenta2-retiro), " en su cuenta bancaria";
 					Escribir " ";
-					Escribir "Desea continuar? S/N";  //CONFIRMACI”N DE CONTINUAR
+					Escribir "Desea continuar? S/N";  //CONFIRMACI√ìN DE CONTINUAR
 					Leer confir;
 					Si confir = "s" o confir = "S" Entonces  //Continuar con el retiro
 						cuenta2 = cuenta2-retiro;
 						Escribir " ";
-						Escribir "La operaciÛn se realizÛ satisfactoriamente";
+						Escribir "La operaci√≥n se realiz√≥ satisfactoriamente";
 						Escribir "Ha retirado: $",retiro, " de su cuenta bancaria";
 						Escribir " ";
 						Escribir "Ahora en su cuenta tiene un total de: $", cuenta2;
 						Escribir " ";
-						Escribir "Desea realizar otra operaciÛn con su cuenta?"; // VOLVER A HACER OTRA OPERACION
+						Escribir "Desea realizar otra operaci√≥n con su cuenta?"; // VOLVER A HACER OTRA OPERACION
 						Escribir "(S/N)";
 						Leer again;
 					SiNo
-						Escribir "Le regresaremos a la p·gina inicial, Juliana";
+						Escribir "Le regresaremos a la p√°gina inicial, Juliana";
 						again = "s";
 					FinSi
 				SiNo
@@ -224,12 +224,12 @@ Proceso Cajero
 								leer trans;
 								
 								Mientras trans> cuenta2 Hacer //Demasiado dinero
-									Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+									Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 									Leer trans;
 								FinMientras
 								
 								Escribir " ";
-								Escribir "Est· a punto de realizar una transferencia a Diego Castillo de: $", trans;
+								Escribir "Est√° a punto de realizar una transferencia a Diego Castillo de: $", trans;
 								Escribir "En su cuenta quedaria con: $", (cuenta2 - trans), " despues de realizar la transferencia";
 								Escribir "Desea continuar o cambiar el valor?";
 								Escribir "(Cualquier letra)/N";
@@ -242,7 +242,7 @@ Proceso Cajero
 							cuenta3 = cuenta3 + trans; // SUMAR TRANSFERENCIA A LA OTRA CUENTA
 							Escribir "Su cuenta ha quedado con un total de: $", cuenta2;
 							Escribir " ";
-							Escribir "Desea realizar otra operaciÛn con su cuenta?";
+							Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 							Escribir "(S/N)";
 							Leer again;
 						SiNo
@@ -255,12 +255,12 @@ Proceso Cajero
 									leer trans;
 									
 									Mientras trans> cuenta1 Hacer //Demasiado dinero
-										Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+										Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 										Leer trans;
 									FinMientras
 									
 									Escribir " ";
-									Escribir "Est· a punto de realizar una transferencia a Marcos Ortis de: $", trans;
+									Escribir "Est√° a punto de realizar una transferencia a Marcos Ortis de: $", trans;
 									Escribir "En su cuenta quedaria con: $", (cuenta2 - trans), " despues de realizar la transferencia";
 									Escribir "Desea continuar o cambiar el valor?";
 									Escribir "(Cualquier letra)/N";
@@ -273,15 +273,15 @@ Proceso Cajero
 								cuenta1 = cuenta1+trans;
 								Escribir "Su cuenta ha quedado con un total de: $", cuenta2;
 								Escribir " ";
-								Escribir "Desea realizar otra operaciÛn con su cuenta?";
+								Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 								Escribir "(S/N)";
 								Leer again;
 							SiNo
-								Escribir "Por favor escoja un valor v·lido (D, M)";
+								Escribir "Por favor escoja un valor v√°lido (D, M)";
 							FinSi
 						FinSi
 					SiNo
-						Escribir "Por favor, ingrese una operaciÛn v·lida";
+						Escribir "Por favor, ingrese una operaci√≥n v√°lida";
 					FinSi
 		FinSi
 		FinMientras
@@ -289,17 +289,17 @@ Proceso Cajero
 		
 		Si id = id3 Entonces //-----------USUARIO DIEGO CASTILLO--------------
 			Escribir " ";
-			Escribir "Buen dÌa, Diego Castillo, digite su contraseÒa, por favor";
+			Escribir "Buen d√≠a, Diego Castillo, digite su contrase√±a, por favor";
 			Leer pass;
 			
-			Mientras pass <> pass3 Hacer  //ContraseÒa incorrecta
-				Escribir "ContraseÒa incorrecta, digitela nuevamente";
+			Mientras pass <> pass3 Hacer  //Contrase√±a incorrecta
+				Escribir "Contrase√±a incorrecta, digitela nuevamente";
 				Leer pass;
 			FinMientras
 			again = "s";
 			Mientras again = "S" o again = "s" Hacer // OTRA OPERACION CON LA CUENTA
-				Escribir " ";   //ContraseÒa correcta
-				Escribir "Bienvenido de nuevo Diego, quÈ operaciÛn desea realizar con su cuenta?";
+				Escribir " ";   //Contrase√±a correcta
+				Escribir "Bienvenido de nuevo Diego, qu√© operaci√≥n desea realizar con su cuenta?";
 				Escribir "Recuerde que cuenta con: $", cuenta3, " en su cuenta bancaria";
 				Escribir " ";
 				Escribir "R-etirar dinero; T-ransferir dinero";
@@ -310,29 +310,29 @@ Proceso Cajero
 					Leer retiro;
 					
 					Mientras retiro > cuenta1 Hacer //Demasiado dinero
-						Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+						Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 						Leer retiro;
 					FinMientras
 					
 					Escribir " ";
 					Escribir "Va a retirar: $", retiro;
-					Escribir "QuedarÌa con un total de: $", (cuenta3-retiro), " en su cuenta bancaria";
+					Escribir "Quedar√≠a con un total de: $", (cuenta3-retiro), " en su cuenta bancaria";
 					Escribir " ";
-					Escribir "Desea continuar? S/N";  //CONFIRMACI”N DE CONTINUAR
+					Escribir "Desea continuar? S/N";  //CONFIRMACI√ìN DE CONTINUAR
 					Leer confir;
 					Si confir = "s" o confir = "S" Entonces  //Continuar con el retiro
 						cuenta1 = cuenta1-retiro;
 						Escribir " ";
-						Escribir "La operaciÛn se realizÛ satisfactoriamente";
+						Escribir "La operaci√≥n se realiz√≥ satisfactoriamente";
 						Escribir "Ha retirado: $",retiro, " de su cuenta bancaria";
 						Escribir " ";
 						Escribir "Ahora en su cuenta tiene un total de: $", cuenta3;
 						Escribir " ";
-						Escribir "Desea realizar otra operaciÛn con su cuenta?"; // VOLVER A HACER OTRA OPERACION
+						Escribir "Desea realizar otra operaci√≥n con su cuenta?"; // VOLVER A HACER OTRA OPERACION
 						Escribir "(S/N)";
 						Leer again;
 					SiNo
-						Escribir "Le regresaremos a la p·gina inicial, Diego";
+						Escribir "Le regresaremos a la p√°gina inicial, Diego";
 						again = "s";
 					FinSi
 				SiNo
@@ -350,12 +350,12 @@ Proceso Cajero
 								leer trans;
 								
 								Mientras trans> cuenta3 Hacer //Demasiado dinero
-									Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+									Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 									Leer trans;
 								FinMientras
 								
 								Escribir " ";
-								Escribir "Est· a punto de realizar una transferencia a Marcos Ortis de: $", trans;
+								Escribir "Est√° a punto de realizar una transferencia a Marcos Ortis de: $", trans;
 								Escribir "En su cuenta quedaria con: $", (cuenta3 - trans), " despues de realizar la transferencia";
 								Escribir "Desea continuar o cambiar el valor?";
 								Escribir "(Cualquier letra)/N";
@@ -368,7 +368,7 @@ Proceso Cajero
 							cuenta1 = cuenta1 + trans; // SUMAR TRANSFERENCIA A LA OTRA CUENTA
 							Escribir "Su cuenta ha quedado con un total de: $", cuenta3;
 							Escribir " ";
-							Escribir "Desea realizar otra operaciÛn con su cuenta?";
+							Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 							Escribir "(S/N)";
 							Leer again;
 						SiNo
@@ -381,12 +381,12 @@ Proceso Cajero
 									leer trans;
 									
 									Mientras trans> cuenta3 Hacer //Demasiado dinero
-										Escribir "No cuenta con suficiente dinero para dicha operaciÛn, seleccione una cantidad menor";
+										Escribir "No cuenta con suficiente dinero para dicha operaci√≥n, seleccione una cantidad menor";
 										Leer trans;
 									FinMientras
 									
 									Escribir " ";
-									Escribir "Est· a punto de realizar una transferencia a Juliana Alvarez de: $", trans;
+									Escribir "Est√° a punto de realizar una transferencia a Juliana Alvarez de: $", trans;
 									Escribir "En su cuenta quedaria con: $", (cuenta3 - trans), " despues de realizar la transferencia";
 									Escribir "Desea continuar o cambiar el valor?";
 									Escribir "(Cualquier letra)/N";
@@ -399,16 +399,16 @@ Proceso Cajero
 								cuenta2 = cuenta2+trans;
 								Escribir "Su cuenta ha quedado con un total de: $", cuenta3;
 								Escribir " ";
-								Escribir "Desea realizar otra operaciÛn con su cuenta?";
+								Escribir "Desea realizar otra operaci√≥n con su cuenta?";
 								Escribir "(S/N)";
 								Leer again;
 							SiNo
-								Escribir "Por favor escoja un valor v·lido (D, J)";
+								Escribir "Por favor escoja un valor v√°lido (D, J)";
 							FinSi
 						FinSi
 						
 					SiNo
-						Escribir "Por favor, ingrese una operaciÛn v·lida";
+						Escribir "Por favor, ingrese una operaci√≥n v√°lida";
 					FinSi
 		FinSi
 		FinMientras
