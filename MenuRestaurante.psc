@@ -185,12 +185,12 @@ Proceso restaurante
 	
 	
 	
-	escribir "1. ¿Que almorzaremos esta semana?    ";
-	escribir "2. ¿Cuando no darán 	el plato X?   ";
-	escribir "3. ¿Que comeremos el dia X?";
-	Escribir "4. ¿Cual es el almuerzo completo del día X?  ";
-	escribir "5. ¿Que cenare el dia X?    ";
-	escribir "6. ¿Cual es el menú general?";
+	escribir "1. Â¿Que almorzaremos esta semana?    ";
+	escribir "2. Â¿Cuando no darÃ¡n 	el plato X?   ";
+	escribir "3. Â¿Que comeremos el dia X?";
+	Escribir "4. Â¿Cual es el almuerzo completo del dÃ­a X?  ";
+	escribir "5. Â¿Que cenare el dia X?    ";
+	escribir "6. Â¿Cual es el menÃº general?";
 	leer option;
 	Segun option Hacer
 		1:
@@ -226,8 +226,8 @@ Proceso restaurante
 			Escribir "Digite el plato que desea consultar ";
 			leer plato;
 			mensaje = "No hay de eso esta semana";
-			mensaje2 = "No se encontró valor correcto de calorias";
-			mensaje3 = "No se encontró valor correcto de precio";
+			mensaje2 = "No se encontrÃ³ valor correcto de calorias";
+			mensaje3 = "No se encontrÃ³ valor correcto de precio";
 			Para fila= 1 Hasta 9 Hacer
 				Para col = 1 Hasta 5 Hacer
 					Si comedor(fila,col) = plato Entonces
@@ -254,7 +254,7 @@ Proceso restaurante
 						FinSi
 						calorias1 = ConvertirANumero(comedor(fila + 9, col));
 						precio1 = ConvertirANumero(comedor(fila + 18, col));
-						mensaje = "Se dará "+plato+" el "+ nomdia+" como "+comida;
+						mensaje = "Se darÃ¡ "+plato+" el "+ nomdia+" como "+comida;
 						mensaje2 = plato + " contiene "+ ConvertirATexto(calorias1) +" calorias";
 						mensaje3 = "Y tiene un precio de: $" + ConvertirATexto(precio1);
 					Fin Si
@@ -267,7 +267,7 @@ Proceso restaurante
 			Escribir mensaje3;
 		3:
 			contador = 0;
-			Escribir "Digite el número del día de la semana que desea consultar ";
+			Escribir "Digite el nÃºmero del dÃ­a de la semana que desea consultar ";
 			leer dia;
 			Segun dia Hacer
 				1:
@@ -312,7 +312,7 @@ Proceso restaurante
 				
 			Fin Para
 		4:
-			Escribir "¿Para qué día desea consultar el almuerzo? ";
+			Escribir "Â¿Para quÃ© dÃ­a desea consultar el almuerzo? ";
 			leer dia;
 			Segun dia Hacer
 				1:
@@ -326,7 +326,7 @@ Proceso restaurante
 				5:
 					nomdia = "Viernes";
 			Fin Segun
-			Escribir "Para el almuerzo del ",nomdia," habrá:";
+			Escribir "Para el almuerzo del ",nomdia," habrÃ¡:";
 			Escribir "";
 			Para fila = 4 Hasta 6 Hacer
 				Si fila = 4 Entonces
@@ -343,7 +343,7 @@ Proceso restaurante
 				Escribir comida + comedor(fila,dia) + "  (Calorias: ",calorias1, ") (Precio: ",precio1,")";
 			fin para
 		5:
-			Escribir "¿Para qué día desea consultar la cena? ";
+			Escribir "Â¿Para quÃ© dÃ­a desea consultar la cena? ";
 			leer dia;
 			Segun dia Hacer
 				1:
@@ -357,7 +357,7 @@ Proceso restaurante
 				5:
 					nomdia = "Viernes";
 			Fin Segun
-			Escribir "Para la cena del ",nomdia," habrá:";
+			Escribir "Para la cena del ",nomdia," habrÃ¡:";
 			Escribir "";
 			Para fila = 7 Hasta 9 Hacer
 				Si fila = 7 Entonces
@@ -374,7 +374,7 @@ Proceso restaurante
 				Escribir comida + comedor(fila,dia) + "  (Calorias: ",calorias1, ") (Precio: ",precio1,")";
 			fin para
 		6:
-			Escribir "     Nuestro menú completo ahora mismo es el siguiente: ";
+			Escribir "     Nuestro menÃº completo ahora mismo es el siguiente: ";
 			Escribir "";
 			para fila = 1 Hasta 9 Hacer
 				espacio = Falso;
