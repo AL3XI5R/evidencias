@@ -4,15 +4,15 @@ Proceso parImpar
 	definir otraVez Como Caracter;
 	continuar = Verdadero;
 	Mientras continuar = Verdadero Hacer
-		Escribir "Digite el número a evaluar: ";
+		Escribir "Digite el nÃºmero a evaluar: ";
 		leer prueba;
 		Si prueba % 2 = 0 Entonces
-			Escribir ConvertirATexto(prueba) + " es un número par";
+			Escribir ConvertirATexto(prueba) + " es un nÃºmero par";
 		SiNo
-			escribir ConvertirATexto(prueba) + " es un número impar";
+			escribir ConvertirATexto(prueba) + " es un nÃºmero impar";
 		FinSi
 		Escribir "";
-		Escribir "Desea consultar otro número? (Si/No) ";
+		Escribir "Desea consultar otro nÃºmero? (Si/No) ";
 		leer otraVez;
 		otraVez = Minusculas(otraVez);
 		Si otraVez == "no" Entonces
