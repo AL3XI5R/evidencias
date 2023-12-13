@@ -22,7 +22,7 @@ Proceso sin_titulo
 	Escribir "Digite la cantidad de terneros a alimentar (1/5): ";
 	leer terneros;
 	Si terneros > 5 o terneros < 1 Entonces
-		Escribir "Seleccione una cantidad, v·lida, minimo uno m·ximo cinco";
+		Escribir "Seleccione una cantidad, v√°lida, minimo uno m√°ximo cinco";
 		Escribir "";
 		Escribir "Reinicie el programa.";
 	Fin Si
@@ -58,7 +58,7 @@ Proceso sin_titulo
 				leche1(x) = 3;
 		FinSegun
 		si razas(x) > 4 o razas(x) < 1 Entonces
-			Escribir "Seleccione una cantidad, v·lida, (1/2/3)";
+			Escribir "Seleccione una cantidad, v√°lida, (1/2/3)";
 			Escribir "";
 			Escribir "Reinicie el programa.";
 		FinSi
@@ -84,7 +84,7 @@ Proceso sin_titulo
 				leche2(z) = 8;
 		FinSegun
 		si edades(z) > 4 o edades(z) < 1 Entonces
-			Escribir "Seleccione una cantidad, v·lida, (1/2/3)";
+			Escribir "Seleccione una cantidad, v√°lida, (1/2/3)";
 			Escribir "";
 			Escribir "Reinicie el programa.";
 		FinSi
@@ -113,11 +113,11 @@ Proceso sin_titulo
 	Escribir "";
 	escribir "La leche total requerida por "+nomterneros+" es de: "+ convertiratexto(lecheterneros)+" litros";
 	
-	//-----------------LECHE ORDE—ADA EN UN DÕA---------------
+	//-----------------LECHE ORDE√ëADA EN UN D√çA---------------
 	definir lechedia como real;
 	Escribir "";
-	Escribir "--------------------LECHE ORDE—ADA----------------------";
-	Escribir "La leche total ordeÒada en el dÌa de hoy fue de: ";
+	Escribir "--------------------LECHE ORDE√ëADA----------------------";
+	Escribir "La leche total orde√±ada en el d√≠a de hoy fue de: ";
 	leche = Aleatorio(200,350);
 	lechedia = leche;
 	Escribir "                  "+convertiratexto(leche)+" litros totales";
@@ -126,7 +126,7 @@ Proceso sin_titulo
 	porcterneros = (lecheterneros * 100 ) / leche;
 	Escribir"";
 	Escribir "--------------------CANTIDADES DE LECHE----------------------";
-	Escribir "DespuÈs del consumo de los terneros ("+convertiratexto(lecheterneros)+" litros)";
+	Escribir "Despu√©s del consumo de los terneros ("+convertiratexto(lecheterneros)+" litros)";
 	leche = leche - lecheterneros;
 	Escribir "Quedan: " + convertiratexto(leche)+ " litros de leche";
 	Escribir "";
@@ -134,20 +134,20 @@ Proceso sin_titulo
 	Definir venta Como Entero;
 	confirmacion = "n";
 	mientras confirmacion = "n" Hacer
-		Escribir "Cuantos litros desea destinar para venta el dÌa de hoy?";
+		Escribir "Cuantos litros desea destinar para venta el d√≠a de hoy?";
 		Leer venta;
 		Mientras venta > leche Hacer
 			Escribir " ";
-			Escribir "No puede seleccionar m·s de "+ConvertirATexto(leche)+" litros";
+			Escribir "No puede seleccionar m√°s de "+ConvertirATexto(leche)+" litros";
 			Escribir "Por favor, digite una cantidad menor de litros de leche";
 			leer venta;
 		FinMientras
-		Escribir "QuedarÌa con un total de "+ConvertirATexto(leche - venta)+" litros de leche para su consumo, desea continuar?";
+		Escribir "Quedar√≠a con un total de "+ConvertirATexto(leche - venta)+" litros de leche para su consumo, desea continuar?";
 		Escribir "S/N";
 		Leer confirmacion;
 		confirmacion = Minusculas(confirmacion);
 		mientras confirmacion <> "s" y confirmacion <> "n" Hacer
-			Escribir "Digite una opciÛn v·lida (S/N)";
+			Escribir "Digite una opci√≥n v√°lida (S/N)";
 			Leer confirmacion;
 		FinMientras
 	FinMientras
@@ -169,7 +169,7 @@ Proceso sin_titulo
 		Escribir "";
 		Escribir"--------------------VENTA DE LECHE----------------------";
 		escribir "";
-		Escribir "C˙al es el precio de cada litro de leche al venderlo? ";
+		Escribir "C√∫al es el precio de cada litro de leche al venderlo? ";
 		Escribir "Precio sugerido: $4,500";
 		leer precio;
 		si precio < 10000 Entonces
@@ -185,33 +185,33 @@ Proceso sin_titulo
 				precio = 1;
 			FinSi
 			mientras confirmacion <> "s" y confirmacion <> "n" Hacer
-				Escribir "Digite una opciÛn v·lida (S/N)";
+				Escribir "Digite una opci√≥n v√°lida (S/N)";
 				Leer confirmacion;
 			FinMientras
 		FinMientras
 	FinMientras
 	Definir ganancia Como real;
 	ganancia = venta * precio;
-	Escribir "Muy bien, vendiendo "+ConvertirATexto(venta)+" litros, cada uno a $"+ConvertirATexto(precio)+" ganarÌa $"+ConvertirATexto(ganancia);
+	Escribir "Muy bien, vendiendo "+ConvertirATexto(venta)+" litros, cada uno a $"+ConvertirATexto(precio)+" ganar√≠a $"+ConvertirATexto(ganancia);
 	Escribir "";
-	Escribir "Desea ver el resumen de las operaciones del dÌa de hoy? ";
+	Escribir "Desea ver el resumen de las operaciones del d√≠a de hoy? ";
 	Escribir "S/N";
 	leer confirmacion;
 	confirmacion = Minusculas(confirmacion);
 	mientras confirmacion <> "s" y confirmacion <> "n" Hacer
-		Escribir "Digite una opciÛn v·lida (S/N)";
+		Escribir "Digite una opci√≥n v√°lida (S/N)";
 		Leer confirmacion;
 	FinMientras
 	si confirmacion = "s" Entonces
 		Escribir "";
-		Escribir"--------------------RES⁄MEN----------------------";
+		Escribir"--------------------RES√öMEN----------------------";
 		Escribir "";
 		Escribir "LECHE CONSUMIDA POR TERNEROS: "+ConvertirATexto(lecheterneros)+" LITROS";
 		Escribir "";
-		Escribir "LECHE ORDE—ADA: "+ConvertirATexto(lechedia)+" LITROS";
+		Escribir "LECHE ORDE√ëADA: "+ConvertirATexto(lechedia)+" LITROS";
 		Escribir "";
 		Escribir "LECHE VENDIDA: "+ConvertirATexto(venta)+" LITROS"+" ("+ConvertirATexto(precio)+" C/LITRO)";
-		Escribir "GANANCIA DEL DÕA: $"+ConvertirATexto(ganancia);
+		Escribir "GANANCIA DEL D√çA: $"+ConvertirATexto(ganancia);
 		Escribir "";
 		Escribir "LECHE PARA CONSUMO DE LA FINCA: "+ConvertirATexto(leche)+" LITROS";
 		Escribir "";
