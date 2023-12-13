@@ -2,12 +2,12 @@ Funcion random <- rand
 	random = aleatorio(1,4);
 FinFuncion
 
-Proceso reguetón
+Proceso reguetÃ³n
 	definir palabras, latino Como Caracter;
 	definir versos, random Como Entero;
 	dimension palabras(6,4);
 	palabras(1,1) = "Mami";
-	palabras(1,2) = "Bebé";
+	palabras(1,2) = "BebÃ©";
 	palabras(1,3) = "Princesa";
 	palabras(1,4) = "Preciosa";
 	
@@ -23,13 +23,13 @@ Proceso reguetón
 	
 	palabras(4,1) = " suave";
 	palabras(4,2) = " lento";
-	palabras(4,3) = " rápido";
+	palabras(4,3) = " rÃ¡pido";
 	palabras(4,4) = " fuerte";
 	
 	palabras(5,1) = " hasta que salga el sol";
 	palabras(5,2) = " toda la noche";
 	palabras(5,3) = " hasta el amanecer";
-	palabras(5,4) = " todo el día";
+	palabras(5,4) = " todo el dÃ­a";
 	
 	palabras(6,1) = " sin anestesia";
 	palabras(6,2) = " sin compromiso";
@@ -37,7 +37,7 @@ Proceso reguetón
 	palabras(6,4) = " sin miedo";
 	
 	
-	Escribir 'Desea usar la versión latina (Reemplazar la L por R)? (Si/no): ';
+	Escribir 'Desea usar la versiÃ³n latina (Reemplazar la L por R)? (Si/no): ';
 	leer latino;
 	latino = Minusculas(latino);
 	si latino = "si" Entonces
