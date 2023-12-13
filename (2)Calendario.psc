@@ -29,32 +29,32 @@ Funcion nomMes <- mes2 (calculo)
 FinFuncion
 
 Algoritmo Calendario
-	Definir mes, dias, año Como Entero;
+	Definir mes, dias, aÃ±o Como Entero;
 	definir bisiesto Como Logico;
 	definir nomMes Como Caracter;
 	
-	Escribir "Digite el año que desea consultar";
-	leer año;
+	Escribir "Digite el aÃ±o que desea consultar";
+	leer aÃ±o;
 	
-	Si año % 4 = 0 Entonces
-		Si año % 100 = 0 entonces
-			Si año % 400 = 0 Entonces
-				Escribir "Es un año bisiesto";
+	Si aÃ±o % 4 = 0 Entonces
+		Si aÃ±o % 100 = 0 entonces
+			Si aÃ±o % 400 = 0 Entonces
+				Escribir "Es un aÃ±o bisiesto";
 				bisiesto = Verdadero;
 			SiNo
-				Escribir "Es un año no bisiesto";
+				Escribir "Es un aÃ±o no bisiesto";
 				bisiesto = Falso;
 			Fin Si
 		SiNo
-			Escribir "Es un año bisiesto";
+			Escribir "Es un aÃ±o bisiesto";
 			bisiesto = Verdadero;
 		Fin Si
 	SiNo
-		Escribir "Es un año no bisiesto";
+		Escribir "Es un aÃ±o no bisiesto";
 		bisiesto = Falso;
 	Fin Si
 	
-	Escribir "Ahora, díme el numero del mes que deseas saber cuantos dias tiene";
+	Escribir "Ahora, dÃ­me el numero del mes que deseas saber cuantos dias tiene";
 	leer mes;
 	Segun mes Hacer
 		1:
@@ -103,7 +103,7 @@ Algoritmo Calendario
 					Escribir nomMes, " tiene ", dias, " dias.";
 					Escribir "El dia siguiente al ultimo dia del mes ingresado es el 1ro de ", mes2(mes);
 				SiNo
-					Escribir "Por favor, ingrese un mes existente con su número correspondiente";
+					Escribir "Por favor, ingrese un mes existente con su nÃºmero correspondiente";
 				Fin Si
 			Fin Si
 		Fin Si
